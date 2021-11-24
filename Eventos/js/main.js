@@ -6,8 +6,8 @@ function callback(event) {
 
 img.addEventListener('click', callback)
 
-//const img = document.querySelector('img')
+const img = document.querySelector('img')
 
-//img.addEventListener('click', function() {
-//    console.log('Clicou')
-//})
+img.addEventListener('click', function() {
+    console.log('Clicou')
+})
