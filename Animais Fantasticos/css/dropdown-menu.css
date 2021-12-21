@@ -1,0 +1,23 @@
+.data-dropdown {
+    position: relative;
+}
+
+.data-dropdown .dropdown-menu {
+    display: none;
+}
+
+.data-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 38px;
+    background: #E54;
+    border: 2px solid #333;
+    z-index: 200;
+}
+
+.dropdown-menu li a:hover {
+    color: white;
+}
