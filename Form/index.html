@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fom</title>
+    <title>Form</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             margin: 0 auto;
         }
         
-        input,
+        input[type='text'],
         textarea {
             width: 100%;
             box-sizing: borde-box;
@@ -50,6 +50,7 @@
         <span class="erro"></span>
         <label for="mensagem">Mensagem</label>
         <textarea name="mensagem" id="mensagem"></textarea>
+        <input type="color" />
     </form>
     <span class="texto"></span>
     <script>
@@ -57,14 +58,16 @@
         const texto = document.querySelector('.texto')
 
         function handleKeyUp(event) {
-            const target = event.target
-            if (!target.checkValidity()) {
-                target.classList.add('invalido')
-                target.nextElementSibling.innerText = target.validationMessage
-            }
-            console.log(event.target.checkValidity())
-            console.log(event.target)
-            texto.innerText = event.target.value
+            //const target = event.target
+            //if (!target.checkValidity()) {
+            //    target.classList.add('invalido')
+            //     target.nextElementSibling.innerText = target.validationMessage
+            // }
+            //  console.log(event.target.checkValidity())
+            // console.log(event.target)
+            //  texto.innerText = event.target.value
+            console.log(event.target.value)
+            document.body.style.backgroundColor = event.target.value
         }
         contato.addEventListener('change', handleKeyUp)
     </script>
