@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Creator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="button-creator">
+        <form id="controles">
+            <label for="texto">Texto</label>
+            <input type="text" name="texto" id="texto" />
+            <label for="color">Cor</label>
+            <input type="color" name="color" id="color" />
+            <label for="backgroundColor">Cor</label>
+            <input type="color" name="backgroundColor" id="backgroundColor" />
+            <label for="backgroundColor">Background Color</label>
+            <input type="text" name="backgroundColor" id="backgroundColor" />
+            <label for="height">Height</label>
+            <input type="range" name="height" id="height" min="0" max="200" />
+            <label for="width">With</label>
+            <input type="range" name="with" id="width" min="0" max="600" />
+            <label for="border">Borda</label>
+            <input type="text" name="border" id="border" />
+            <label for="borderRadius">Borda Radius</label>
+            <input type="range" name="borderRadius" id="borderRadius" min="0" max="20" />
+            <select name="fontFamiliy" id="fontFamiliy">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="monoespace">monoespace</option>
+        </select>
+            <label for="fontSize">Fonr Size</label>
+            <input type="number" name="fontSize" id="fontSize" />
+        </form>
+    </section>
+    <section class="resultado">
+        <button class="btn">Clique</button>
+        <pre><code class="css"></code></pre>
+    </section>
+</body>
+<script src="scrpt.js"></script>
+
+</html>
