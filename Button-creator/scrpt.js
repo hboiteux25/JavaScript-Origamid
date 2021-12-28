@@ -39,7 +39,12 @@ function handleChange(event) {
     const value = event.target.value
 
     handleStyle[name](value)
+    saveValues(name, value)
     showCss()
+}
+
+function saveValues(name, value) {
+    localStorage[name] = value
 }
 
 function showCss() {
