@@ -43,9 +43,20 @@ function handleChange(event) {
     showCss()
 }
 
+function setValues() {
+    const propiedades = Object.keys(localStorage)
+    propiedades.forEach(propiedades => {
+        handleStyle[propertie](localStorage[properties])
+        controles.elements[properties].value = localStorage[properties]
+    })
+    console.log(propiedades)
+    showCss()
+}
+
 function saveValues(name, value) {
     localStorage[name] = value
 }
+setValues()
 
 function showCss() {
     cssText.innerHTML = btn.style.cssText.split('; ').join(';</span><span>')
