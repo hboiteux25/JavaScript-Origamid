@@ -22,6 +22,7 @@ input {
 
 #controles {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: -80px;
     font-size: .875rem;
     background: #eee;
     padding: 1rem;
@@ -40,4 +41,11 @@ input {
 .css span {
     display: block;
     margin-bottom: .5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.resultado {
+    display: block;
+    margin-left: 50px;
+    padding-left: 80px;
 }

@@ -20,14 +20,14 @@ const handleStyle = {
     color(value) {
         this.element.style.color = value
     },
-    borde(value) {
-        this.element.style.borde = value
+    border(value) {
+        this.element.style.border = value + 'px'
     },
-    bordeRadius(value) {
-        this.element.style.bordeRadius = value + 'px'
+    borderRadius(value) {
+        this.element.style.borderRadius = value + 'px'
     },
-    fontFamily(value) {
-        this.element.style.fontFamily = value
+    fontFamiliy(value) {
+        this.element.style.fontFamiliy = value
     },
     fontSize(value) {
         this.element.style.fontSize = value + 'rem'
@@ -39,8 +39,10 @@ function handleChange(event) {
     const value = event.target.value
 
     handleStyle[name](value)
+    showCss()
 }
 
 function showCss() {
-    css.innerText = 'Teste'
+    cssText.innerHTML = btn.style.cssText.split('; ').join(';</span><span>')
+    console.log(btn.style.cssText.split('; ').join(';</span><span>'))
 }
