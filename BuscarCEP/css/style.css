@@ -1,0 +1,21 @@
+body {}
+
+label {
+    display: block;
+    display: block;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    margin-top: 15px;
+    display: block;
+}
+
+
+/*
+.resultadoCep {
+    padding-top: 15px;
+    color: white;
+}
+*/
